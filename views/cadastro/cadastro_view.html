@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../../index.html">Home</a>
+        <a class="navbar-brand" href="cadastro_view.html">Calcular</a>
+        <a class="navbar-brand" href="../consulta/consulta_view.html">Consultar</a>
+    </nav>
+
+    <main>
+        <H2>Insira os valores</H2>
+        <form action="cadastro_controller.php" method="post">
+            <div class="form-group">
+                <label>Nome:</label>
+                <input type="text" class="form-control" aria-describedby="name" placeholder="Digite o seu nome aqui"
+                    name="nome">
+            </div>
+            <div class="form-group">
+                <label>1º Nota</label>
+                <input type="number" class="form-control" placeholder="Digite sua nota aqui" name="nota1">
+            </div>
+            <div class="form-group">
+                <label>2º Nota</label>
+                <input type="number" class="form-control" placeholder="Digite sua segunda nota aqui" name="nota2">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
